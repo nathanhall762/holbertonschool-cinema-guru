@@ -3,9 +3,13 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --color-primary: #BB000E;
+  --color-background-dark: #161616;
+  --color-background-light: #222222;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #c28da9;
+  background-color: var(--color-background-light);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
