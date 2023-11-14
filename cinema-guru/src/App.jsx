@@ -6,18 +6,20 @@ import { useState } from "react";
 import SearchBar from "./components/general/SearchBar";
 import Authentication from "./routes/auth/Authentication";
 import Header from "./components/navigation/Header";
+import SideBar from "./components/navigation/Sidebar";
 
 function App() {
-  const [searchTitle, setSearchTitle] = useState('');
+  const [searchTitle, setSearchTitle] = useState("");
 
   return (
     <>
-      <Header userUsername="Nathan"/>
+      <Header userUsername="Nathan" />
       <StandardTextField />
       <SelectInput />
       <ContainedButton />
       <SearchBar title={searchTitle} setTitle={setSearchTitle} />
       <Authentication />
+      <SideBar />
     </>
   );
 }
